@@ -1,0 +1,17 @@
+function setup() {
+  createCanvas(400, 400);  background(220);
+   colorMode(HSB, 100)
+}
+var x=1
+var y=1
+var t=1
+function draw() {
+  
+t=random(-1000,1000)
+  line(x,200+x,200-y,y)
+  x=t*1.5
+  y=t-1
+stroke(x,y,t)
+line(-x,200+x,200-y,-y)
+  line(-x,-200+x,200+y,-y)
+}
